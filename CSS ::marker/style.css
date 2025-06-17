@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  background-color: #171117;
+
+  display: grid;
+  place-content: center;
+
+  font-family: 'Inter', sans-serif;
+  color: #fbfbfa;
+  overflow: hidden;
+}
+
+ul {
+margin-top: 30px;
+}
+
+/* Working with global ::marker */
+::marker {
+  color: hsl(15, 53%, 34%);
+}
+
+/* Not working with class ::marker */
+.others-best-food::marker {
+  color: hsl(153, 53%, 34%);
+}
+
+
+/* Fixed */
+.others-best-food ::marker {
+  color: hsl(202, 53%, 34%);
+}
+
