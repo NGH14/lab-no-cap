@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>innerText VS innerHTML VS textContent</title>
+  </head>
+  <body>
+    <nav>
+      <a>Home</a>
+      <a>About</a>
+      <a style="display: none">Contact</a>
+      <a style="visibility: hidden">Pricing</a> <a style="opacity: 0">Login</a>
+    </nav>
+    <script>
+       const navElement = document.querySelector('nav');
+      console.log({
+        innerHTML: navElement.innerHTML,
+        textContent: navElement.textContent,
+        innerText: navElement.innerText,
+      });
+    </script>
+  </body>
+</html>

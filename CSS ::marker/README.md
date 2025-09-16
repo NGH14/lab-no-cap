@@ -1,4 +1,4 @@
-# problem with ::marker
+# Problem with ::marker
 
 The [`::marker`](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker) is have the problems when using with class CSS selector.
 
